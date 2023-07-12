@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.workmenu{
+    position: relative;
+    display: grid;
+    grid-gap: 10px;
+    padding-left: 30px;
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 300px;
+    border-left: 0;
+    z-index: 0;
+    margin-top: 150px;
+}
+.arrow{
+    text-align: end;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.Manage-nas{
+    /* font-family:  cursive; */
+    font-size: 30px;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.sort-text{
+    /* font-family:  cursive; */
+    font-size: 30px;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    margin-bottom: 10px;
+}

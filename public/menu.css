@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nameshop {
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    grid-column: col 1 / col 3;
+    text-align: start;
+    padding-left: 30px;
+}
+.green{
+    grid-column: col 1 / col 5;
+    margin-right: 500px;
+   
+}
+.search{
+    grid-column: col 1 / col 4;
+    justify-content: flex-end;
+}
+
+.menu {
+    display: flex;
+    grid-template-columns: repeat(5, [col] 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-items: center;
+    margin-bottom: 5px;
+    border-bottom: 2px solid rgba(51, 63, 54, 0.555);
+    justify-content: space-between;
+}

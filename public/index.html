@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bg.css">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="workmenu.css">
+    <link rel="stylesheet" href="item.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>Monistore</title>
+</head>
+<body>
+<form name="productForm" action="/products" method="POST" id="modalform" enctype="multipart/form-data">
+    <div class="conteinar" id="modalcont">
+        <div class="head">
+            <p class="text-h">
+               Створити
+            </p>
+            <div class="btn-grid">
+                <input type="submit" value="X" id="btn-close" onclick="event.preventDefault(); Modaleclose()">
+            </div>
+        </div>
+        <div class="center">
+            <input type="hidden" name="productId" id="productId">
+                <input type="hidden" name="oldCloudinaryPublicId" id="oldCloudinaryPublicId">
+                <input type="hidden" name="oldImagePath" id="oldImagePath">
+            <p class="text-p">
+                Модель монітора:
+            </p>
+            <input class="text-field" id="js-input-model" maxlength="50" name="productName" placeholder="Введіть модель монітора" type="text">
+            <p class="text-p">
+                Діагональ:
+            </p>
+            <select class="text-field" id="js-proc" maxlength="30" name="productDiagonal">
+                <option value="22">22</option>
+                <option value="27">27</option>
+                <option value="28.9">28.9</option>
+            </select>
+                <p class="text-p">
+                Тип PK-матриці:
+            </p>
+            <select class="text-field" id="js-op"  name="productMatrix">
+                <option value="IPS">IPS</option>
+                <option value="TN">TN</option>
+                <option value="VA">VA</option>
+            </select>
+                <p class="text-p">
+                    Формат зображення:
+            </p>
+            <select class="text-field" id="js-lan" name="productFormat">
+                <option value="4/3">4/3</option>
+                <option value="16/9">16/9</option>
+                <option value="16/10">16/10</option>
+            </select>
+            <p class="text-p">
+                Інтерфейсні роз'єми:
+            </p>
+            <select name="productInterf" id="js-disk" class="select-t">
+                <option value="HDMI">HDMI</option>
+                <option value="VGA">VGA</option>
+                <option value="DVI">DVI</option>
+                <option value="Display port">Display port</option>
+            </select>
+            <p class="text-p" style="padding-bottom: 10px;">
+                Виберіть файл зображення:
+            </p>
+            <input class="file" name="productImage" type="file" id="productImage" accept=".jpeg, .jpg, .png">
+            <button type="submit" id="submitBtn" onclick="modalpush(); event.preventDefault();" value="Confirm" class="buttonedit">Confirm</button>
+        </div>
+    </div>
+</form>
+
+<div class="grey" onclick="Modaleclose();" id="greybg"></div>
+    <div class="menu">
+        <div class="nameshop">
+            <b style="color:white">Monistore</b>
+        </div>
+                <div class="search"><input type="search" class="searchfield" placeholder="Search monitors"/></div>
+                <div class="green"><button class="green-button">Search</button></div>
+    </div>
+    <div class="workmenu">
+        <div class="Manage-nas"><b>Manage monitor</b></div>
+        <div>
+            <button type="submit" class="create-button" onclick="Modaleshow()">Create</button>
+        </div>
+        <div class="switch-elements">
+            <div class="sort-text">
+                <b>Sort by diagonal</b>
+            </div>
+            <div>
+                <div class="switch-div">
+            <label class="switch">
+                <input type="checkbox" id="sortcheckbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="dataContainer">
+    </div>
+    
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3>Company<span>logo</span></h3>
+
+            <p class="footer-links">
+                <a href="#" class="link-1">Home</a>
+                
+                <a href="#">Blog</a>
+            
+                <a href="#">Pricing</a>
+            
+                <a href="#">About</a>
+                
+                <a href="#">Faq</a>
+                
+                <a href="#">Contact</a>
+            </p>
+
+            <p class="footer-company-name">Company Name © 2015</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+39542145</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">hutyimax@gmail.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>About the company</span>
+                Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+        
+    </footer>
+
+     <script src="buttons.js"></script>
+     <script src="valid.js"></script>
+     <script src="forminput.js"></script>
+</body>
+</html>

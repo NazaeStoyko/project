@@ -1,0 +1,37 @@
+.element {
+	background-color: #ffffff;
+	width: 250px;
+	margin: 10px;
+	text-align: center;
+	border: 2px solid rgb(0, 0, 0);
+	border-radius: 10px;
+}
+
+.element-img {
+	width: 200px;
+	height: 200px;
+	margin: 10px auto;
+	border-radius: 10px;
+}
+
+.element-data {
+	text-align: center;
+    
+}
+
+.element-name {
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+.element-text {
+	font-size: 15px;
+	padding-bottom: 5px; 
+}
+
+.element-footer {
+	display: flex;
+	justify-content: space-between;
+    margin: 5px;
+}

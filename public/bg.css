@@ -1,0 +1,34 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+.menu {
+	background: firebrick; 
+}
+
+.workmenu {
+	background: #ffffff; 
+}
+
+.dataContainer {
+	position: absolute;
+	top: 20%;
+	left: 24%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+@media (max-width: 800px), (max-height: 700px) {
+	.dataContainer {
+		top: 0;
+		left: 0;
+		position: relative;
+		height: auto;
+	}
+}

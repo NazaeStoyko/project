@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grey {
+    position: fixed;
+    width: 400%;
+    height: 400%;
+    background-color: rgba(48, 66, 47, 0.777);
+    z-index: 1;
+    display: none;
+}
+
+.photo {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+}
+
+.file {
+    margin-bottom: 20px;
+}
+
+.text-p {
+    font-size: 25px;
+    margin-top: 10px;
+    user-select: none;
+}
+
+.text-h {
+    color: #162ec79d;
+    align-items: start;
+    display: grid;
+    margin-top: 10px;
+    font-size: 22px;
+    margin-left: 10px;
+    user-select: none;
+}
+
+.head {
+    border-bottom: 2px solid rgba(215, 16, 16, 0.507);
+}
+
+.conteinar {
+    position: absolute;
+    left: 30%;
+    top: 3%;
+    display: none;
+    border-radius: 10px;
+    background-color: white;
+    width: 35%;
+    background: linear-gradient(-45deg, #ca2987, #3ccde7, #8e23d5, #23d579);
+    background-size: 400% 400%;
+    animation: gradient 8s ease infinite;
+    /* font-family: 'Kablammo', cursive; */
+    z-index: 2;
+}
+
+.text-field {
+    padding: 10px;
+    width: 300px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-align: start;
+}
+
+.select-t {
+    padding: 10px;
+    padding-right: 220px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid gray;
+}
+
+.center {
+    display: grid;
+    place-items: center;
+}
+
+.button {
+    font-size: 15px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.btn-grid {
+    display: grid;
+    place-items: end;
+    margin-top: -29px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+/* Змінені стилі для шрифтів та кольорів */
+body {
+    font-family: Arial;
+    color: #333;
+}
+
+.conteinar {
+    color: #fff;
+}
+
+.text-p {
+    color: #333;
+}
+
+.text-h {
+    color: #333;
+}
+
+.select-t {
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #e41919;
+}
